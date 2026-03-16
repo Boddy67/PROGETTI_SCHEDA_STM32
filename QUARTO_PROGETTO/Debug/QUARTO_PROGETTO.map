@@ -103,53 +103,29 @@ Discarded input sections
  .group         0x00000000        0xc ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
- .group         0x00000000        0xc ./Core/Src/main.o
  .text          0x00000000        0x0 ./Core/Src/main.o
  .data          0x00000000        0x0 ./Core/Src/main.o
  .bss           0x00000000        0x0 ./Core/Src/main.o
+ .text.LL_GPIO_ResetOutputPin
+                0x00000000       0x18 ./Core/Src/main.o
+ .text.LL_IOP_GRP1_EnableClock
+                0x00000000       0x2c ./Core/Src/main.o
  .rodata.CHANNEL_OFFSET_TAB
                 0x00000000        0x3 ./Core/Src/main.o
- .rodata        0x00000000       0x1b ./Core/Src/main.o
- .text.main     0x00000000       0x40 ./Core/Src/main.o
- .text.LCD_STROBE
-                0x00000000       0x36 ./Core/Src/main.o
- .text.LCD_DATA
-                0x00000000       0x80 ./Core/Src/main.o
- .text.LCD_CMD  0x00000000       0x44 ./Core/Src/main.o
- .text.LCD_CLEAR
-                0x00000000       0x16 ./Core/Src/main.o
- .text.LCD_PUTS
-                0x00000000       0x50 ./Core/Src/main.o
- .text.LCD_GOTO
-                0x00000000       0x26 ./Core/Src/main.o
- .text.LCD_INIT
-                0x00000000       0x5c ./Core/Src/main.o
+ .text.main     0x00000000       0x14 ./Core/Src/main.o
  .text.SystemClock_Config
-                0x00000000        0xa ./Core/Src/main.o
+                0x00000000       0x90 ./Core/Src/main.o
  .text.MX_GPIO_Init
-                0x00000000       0x94 ./Core/Src/main.o
- .debug_info    0x00000000      0x520 ./Core/Src/main.o
- .debug_abbrev  0x00000000      0x1fd ./Core/Src/main.o
+                0x00000000      0x314 ./Core/Src/main.o
+ .text.Error_Handler
+                0x00000000        0xc ./Core/Src/main.o
+ .debug_info    0x00000000      0x704 ./Core/Src/main.o
+ .debug_abbrev  0x00000000      0x206 ./Core/Src/main.o
  .debug_aranges
-                0x00000000       0x68 ./Core/Src/main.o
+                0x00000000       0x48 ./Core/Src/main.o
  .debug_rnglists
-                0x00000000       0x4b ./Core/Src/main.o
- .debug_macro   0x00000000      0x2db ./Core/Src/main.o
+                0x00000000       0x33 ./Core/Src/main.o
+ .debug_macro   0x00000000      0x20d ./Core/Src/main.o
  .debug_macro   0x00000000      0xab4 ./Core/Src/main.o
  .debug_macro   0x00000000       0x2e ./Core/Src/main.o
  .debug_macro   0x00000000       0x28 ./Core/Src/main.o
@@ -196,26 +172,10 @@ Discarded input sections
  .debug_macro   0x00000000      0x2e3 ./Core/Src/main.o
  .debug_macro   0x00000000      0x185 ./Core/Src/main.o
  .debug_macro   0x00000000       0xb8 ./Core/Src/main.o
- .debug_macro   0x00000000       0x61 ./Core/Src/main.o
- .debug_macro   0x00000000       0x24 ./Core/Src/main.o
- .debug_macro   0x00000000       0x43 ./Core/Src/main.o
- .debug_macro   0x00000000       0x34 ./Core/Src/main.o
- .debug_macro   0x00000000      0x370 ./Core/Src/main.o
- .debug_macro   0x00000000       0x16 ./Core/Src/main.o
- .debug_macro   0x00000000       0x4a ./Core/Src/main.o
- .debug_macro   0x00000000       0x34 ./Core/Src/main.o
- .debug_macro   0x00000000       0x10 ./Core/Src/main.o
- .debug_macro   0x00000000       0x58 ./Core/Src/main.o
- .debug_macro   0x00000000       0x8e ./Core/Src/main.o
- .debug_macro   0x00000000       0x1c ./Core/Src/main.o
- .debug_macro   0x00000000      0x185 ./Core/Src/main.o
- .debug_macro   0x00000000       0x10 ./Core/Src/main.o
- .debug_macro   0x00000000       0x3c ./Core/Src/main.o
- .debug_macro   0x00000000       0x20 ./Core/Src/main.o
- .debug_line    0x00000000      0xa60 ./Core/Src/main.o
- .debug_str     0x00000000    0x72f46 ./Core/Src/main.o
+ .debug_line    0x00000000      0x988 ./Core/Src/main.o
+ .debug_str     0x00000000    0x6feca ./Core/Src/main.o
  .comment       0x00000000       0x44 ./Core/Src/main.o
- .debug_frame   0x00000000      0x13c ./Core/Src/main.o
+ .debug_frame   0x00000000       0xc8 ./Core/Src/main.o
  .ARM.attributes
                 0x00000000       0x2c ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/stm32c0xx_hal_msp.o

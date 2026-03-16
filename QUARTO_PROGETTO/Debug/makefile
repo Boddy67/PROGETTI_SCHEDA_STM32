@@ -59,8 +59,8 @@ all: main-build
 main-build: QUARTO_PROGETTO.elf secondary-outputs
 
 # Tool invocations
-QUARTO_PROGETTO.elf QUARTO_PROGETTO.map: $(OBJS) $(USER_OBJS) C:\Users\Esame\Desktop\Progetti\ Andrei\ Bodnar\QUARTO_PROGETTO\STM32C031C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "QUARTO_PROGETTO.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Esame\Desktop\Progetti Andrei Bodnar\QUARTO_PROGETTO\STM32C031C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="QUARTO_PROGETTO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+QUARTO_PROGETTO.elf QUARTO_PROGETTO.map: $(OBJS) $(USER_OBJS) C:\Users\Esame\Desktop\Progetti\ Andrei\ Bodnar\PROGETTI_MX32IDE\QUARTO_PROGETTO\STM32C031C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "QUARTO_PROGETTO.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Esame\Desktop\Progetti Andrei Bodnar\PROGETTI_MX32IDE\QUARTO_PROGETTO\STM32C031C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="QUARTO_PROGETTO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
